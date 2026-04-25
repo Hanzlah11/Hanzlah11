@@ -1,0 +1,104 @@
+<svg width="600" height="120" viewBox="0 0 600 120" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&amp;display=swap');
+
+      .box { fill: none; stroke: #00FF41; stroke-width: 2; }
+      .inner-box { fill: none; stroke: #00FF41; stroke-width: 1; opacity: 0.4; }
+      .bg { fill: #0d1117; }
+      .text { font-family: 'Courier New', monospace; fill: #00FF41; font-size: 13px; font-weight: bold; }
+      .subtext { font-family: 'Courier New', monospace; fill: #00FF41; font-size: 11px; }
+      .dim { fill: #005515; }
+      .cursor { fill: #00FF41; }
+
+      .flicker {
+        animation: flicker 4s infinite;
+      }
+      @keyframes flicker {
+        0%, 96%, 100% { opacity: 1; }
+        97% { opacity: 0.4; }
+        98% { opacity: 1; }
+        99% { opacity: 0.3; }
+      }
+
+      .scanline {
+        animation: scan 6s linear infinite;
+      }
+      @keyframes scan {
+        0%   { transform: translateY(-120px); opacity: 0.07; }
+        100% { transform: translateY(120px); opacity: 0.07; }
+      }
+
+      .blink {
+        animation: blink 1s step-end infinite;
+      }
+      @keyframes blink {
+        0%, 100% { opacity: 1; }
+        50%       { opacity: 0; }
+      }
+
+      .glow-pulse {
+        animation: glow 2.5s ease-in-out infinite;
+      }
+      @keyframes glow {
+        0%, 100% { stroke: #00FF41; stroke-width: 2; }
+        50%       { stroke: #00FF41; stroke-width: 3; filter: drop-shadow(0 0 6px #00FF41); }
+      }
+
+      .slide-in-1 { animation: slidein 0.5s ease-out 0.1s both; }
+      .slide-in-2 { animation: slidein 0.5s ease-out 0.4s both; }
+      .slide-in-3 { animation: slidein 0.5s ease-out 0.7s both; }
+      @keyframes slidein {
+        from { opacity: 0; transform: translateX(-10px); }
+        to   { opacity: 1; transform: translateX(0); }
+      }
+    </style>
+
+    <!-- scanline gradient -->
+    <linearGradient id="scanGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#00FF41" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#00FF41" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#00FF41" stop-opacity="0"/>
+    </linearGradient>
+
+    <clipPath id="clip">
+      <rect width="600" height="120"/>
+    </clipPath>
+  </defs>
+
+  <!-- background -->
+  <rect width="600" height="120" class="bg"/>
+
+  <!-- scanline effect -->
+  <g clip-path="url(#clip)">
+    <rect width="600" height="40" fill="url(#scanGrad)" class="scanline"/>
+  </g>
+
+  <!-- outer border (glowing pulse) -->
+  <rect x="4" y="4" width="592" height="112" rx="2" class="box glow-pulse flicker"/>
+
+  <!-- inner border -->
+  <rect x="10" y="10" width="580" height="100" rx="1" class="inner-box"/>
+
+  <!-- corner pixels -->
+  <rect x="4"   y="4"   width="6" height="6" fill="#00FF41"/>
+  <rect x="590" y="4"   width="6" height="6" fill="#00FF41"/>
+  <rect x="4"   y="110" width="6" height="6" fill="#00FF41"/>
+  <rect x="590" y="110" width="6" height="6" fill="#00FF41"/>
+
+  <!-- label top -->
+  <rect x="220" y="1" width="160" height="8" fill="#0d1117"/>
+  <text x="300" y="8" text-anchor="middle" class="subtext" font-size="9" fill="#00FF41">★ PLAYER ONE ★</text>
+
+  <!-- main text lines -->
+  <text x="300" y="52" text-anchor="middle" class="text slide-in-1" font-size="16" letter-spacing="2">HANZLAH</text>
+  <text x="300" y="74" text-anchor="middle" class="subtext slide-in-2" fill="#00BB30">HAS ENTERED THE GAME</text>
+  <text x="300" y="93" text-anchor="middle" class="subtext slide-in-3" font-size="10" fill="#008820">FAST NUCES  ·  CS-C  ·  RAWALPINDI</text>
+
+  <!-- blinking cursor -->
+  <rect x="344" y="80" width="8" height="2" class="cursor blink"/>
+
+  <!-- bottom label -->
+  <rect x="210" y="113" width="180" height="8" fill="#0d1117"/>
+  <text x="300" y="119" text-anchor="middle" class="subtext" font-size="8" fill="#005515">▶ PRESS START TO CONTINUE ◀</text>
+</svg>
