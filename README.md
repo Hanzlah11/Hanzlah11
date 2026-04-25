@@ -13,12 +13,7 @@
 
 <br/>
 
-```
-▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
-█  PLAYER ONE — HANZLAH — HAS ENTERED  █
-█         FAST NUCES — CS-C            █
-▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
-```
+<img src="player-card.svg" alt="Player One — Hanzlah has entered the game" width="600"/>
 
 [![Followers](https://img.shields.io/github/followers/Hanzlah11?style=flat-square&color=00FF41&labelColor=0d1117&label=FOLLOWERS)](https://github.com/Hanzlah11)
 [![Profile Views](https://komarev.com/ghpvc/?username=Hanzlah11&style=flat-square&color=00FF41&label=PROFILE+VIEWS)](https://github.com/Hanzlah11)
@@ -47,12 +42,12 @@ Current XP : Grinding AI, Systems Programming & Game Dev
 | Skill | Level | XP Bar |
 |-------|-------|--------|
 | Python | ██████████░░ Lv 8 | `▓▓▓▓▓▓▓▓▓▓░░` |
-| C / Systems | █████████░░░ Lv 7 | `▓▓▓▓▓▓▓▓▓░░░` |
+| C / Systems / C++ | █████████░░░ Lv 7 | `▓▓▓▓▓▓▓▓▓░░░` |
 | Java | ████████░░░░ Lv 6 | `▓▓▓▓▓▓▓▓░░░░` |
-| HTML / CSS / JS | ████████░░░░ Lv 6 | `▓▓▓▓▓▓▓▓░░░░` |
+| Game Dev | ████████░░░░ Lv 6 | `▓▓▓▓▓▓▓▓░░░░` — *ACTIVE QUEST* |
 | AI / ML | ███████░░░░░ Lv 5 | `▓▓▓▓▓▓▓░░░░░` |
+| HTML / CSS | ███████░░░░░ Lv 5 | `▓▓▓▓▓▓▓░░░░░` |
 | SQL / Databases | ██████░░░░░░ Lv 4 | `▓▓▓▓▓▓░░░░░░` |
-| Game Dev (Unity) | █████░░░░░░░ Lv 3 | `▓▓▓▓▓░░░░░░░` — *ACTIVE QUEST* |
 
 </div>
 
